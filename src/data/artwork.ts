@@ -1,6 +1,6 @@
 import type { artwork } from '../types/artwork';
 
-import artwork1 from '../assets/images/artwork-1.jpg';
+import artwork1 from '../assets/images/First_AI.png';
 // import artwork2 from '../assets/images/artwork-2.jpg';
 // import artwork3 from '../assets/images/artwork-3.jpg';
 // import artwork4 from '../assets/images/artwork-4.jpg';
