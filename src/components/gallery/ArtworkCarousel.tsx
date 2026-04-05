@@ -1,5 +1,4 @@
 import { useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
 import type { artwork } from '../../types/artwork';
 
 type ArtworkCarouselProps = {
@@ -72,7 +71,7 @@ export default function ArtworkCarousel({
           <button
             type="button"
             className="artwork-carousel__image-button"
-            onClick={toggleExpanded}
+            onClick={() => toggleExpanded(currentArtwork.id)}
             aria-expanded={isExpanded}
           >
             <img
