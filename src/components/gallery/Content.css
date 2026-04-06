@@ -1,0 +1,15 @@
+.content {
+  display: grid;
+  gap: 1rem;
+}
+
+.meta {
+  display: grid;
+  gap: 0.4rem;
+  max-width: 30vw;
+}
+
+.meta p,
+.story {
+  margin: 0;
+}

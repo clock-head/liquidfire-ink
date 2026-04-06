@@ -1,5 +1,6 @@
 .artwork-carousel {
   width: 100%;
+  margin: 0 auto;
 }
 
 .artwork-carousel__header {
@@ -20,6 +21,9 @@
   grid-template-columns: auto 1fr auto;
   gap: 1rem;
   align-items: center;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
 }
 
 .artwork-carousel__control {
@@ -32,9 +36,10 @@
 
 .artwork-carousel__slide {
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
+  grid-template-rows: 4fr 1fr;
   gap: 2rem;
-  align-items: start;
+  align-items: center;
+  min-width: 0;
 }
 
 .artwork-carousel__image-link {
@@ -45,21 +50,6 @@
   width: 100%;
   max-height: 70vh;
   object-fit: cover;
-}
-
-.artwork-carousel__content {
-  display: grid;
-  gap: 1rem;
-}
-
-.artwork-carousel__meta {
-  display: grid;
-  gap: 0.4rem;
-}
-
-.artwork-carousel__meta p,
-.artwork-carousel__description {
-  margin: 0;
 }
 
 .artwork-carousel__status {

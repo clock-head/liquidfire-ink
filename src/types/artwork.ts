@@ -4,11 +4,16 @@ export type artwork = {
   title: string;
   year: string;
   medium: string;
-  dimensions?: string;
+  aspectRatio?: string;
   price?: string;
   status?: 'available' | 'sold' | 'not for sale';
   image: string;
   alt: string;
   description: string;
   featured?: boolean;
+};
+
+export type dimensions = {
+  height: number;
+  width: number;
 };

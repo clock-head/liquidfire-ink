@@ -1,5 +1,8 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useEffect } from 'react';
+import { getDimensionsFromAspectRatio } from '../../utils/dimensionUtils';
 import type { artwork } from '../../types/artwork';
+import Content from './Content';
+import './ArtworkCarousel.css';
 
 type ArtworkCarouselProps = {
   artworks: artwork[];
@@ -8,16 +11,38 @@ type ArtworkCarouselProps = {
 
 export default function ArtworkCarousel({
   artworks,
-  title = 'Exhibition',
+  title = 'Liquidfire',
 }: ArtworkCarouselProps) {
   const safeArtworks = useMemo(() => artworks ?? [], [artworks]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [expandedArtworkId, setExpandedArtworkId] = useState<string | null>(
     null,
   );
+  const [currentArtworkDimensions, setCurrentArtworkDimensions] = useState<{
+    height: number;
+    width: number;
+  } | null>(null);
+
+  const [scaleFactor, setScaleFactor] = useState(400);
+
+  useEffect(() => {
+    const dimensions = getDimensionsFromAspectRatio(
+      safeArtworks[currentIndex].aspectRatio ?? '1:1',
+    );
+
+    const setDimensions = () => {
+      setCurrentArtworkDimensions({
+        height: dimensions.height,
+        width: dimensions.width,
+      });
+    };
+
+    setDimensions();
+  }, [currentIndex]);
 
   const toggleExpanded = (id: string) => {
     setExpandedArtworkId(expandedArtworkId === id ? null : id);
+    setScaleFactor(expandedArtworkId === id ? 400 : 700);
   };
 
   if (safeArtworks.length === 0) {
@@ -38,6 +63,13 @@ export default function ArtworkCarousel({
     setCurrentIndex((prev) =>
       prev === 0 ? safeArtworks.length - 1 : prev - 1,
     );
+
+    if (currentArtwork.aspectRatio) {
+      const dimensions = getDimensionsFromAspectRatio(
+        currentArtwork.aspectRatio,
+      );
+      setCurrentArtworkDimensions(dimensions);
+    }
   };
 
   const goToNext = () => {
@@ -68,27 +100,34 @@ export default function ArtworkCarousel({
           ←
         </button>
         <article className="artwork-carousel__slide">
-          <button
-            type="button"
-            className="artwork-carousel__image-button"
-            onClick={() => toggleExpanded(currentArtwork.id)}
-            aria-expanded={isExpanded}
-          >
-            <img
-              src={currentArtwork.image}
-              alt={currentArtwork.alt}
-              className="artwork-carousel__image"
-            />
-          </button>
-
-          <div className="artwork-carousel__content">
-            <div className="artwork-carousel__meta">
-              <h3>{currentArtwork.title}</h3>
-              <p className="artwork-carousel__description">
-                {currentArtwork.description}
-              </p>
-            </div>
+          <div>
+            <button
+              type="button"
+              className="artwork-carousel__image-button"
+              onClick={() => toggleExpanded(currentArtwork.id)}
+              aria-expanded={isExpanded}
+            >
+              <img
+                src={currentArtwork.image}
+                alt={currentArtwork.alt}
+                height={
+                  currentArtworkDimensions?.height
+                    ? currentArtworkDimensions.height * scaleFactor
+                    : undefined
+                }
+                width={
+                  currentArtworkDimensions?.width
+                    ? currentArtworkDimensions.width * scaleFactor
+                    : undefined
+                }
+                className="artwork-carousel__image"
+              />
+            </button>
           </div>
+
+          {expandedArtworkId === currentArtwork.id && (
+            <Content currentArtwork={currentArtwork} />
+          )}
         </article>
 
         <button
