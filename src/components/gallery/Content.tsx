@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import type { artwork } from '../../types/artwork';
 import './Content.css';
 
