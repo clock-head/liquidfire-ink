@@ -1,0 +1,21 @@
+.artwork-carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.artwork-carousel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.artwork-carousel__header h2,
+.artwork-carousel__meta h3 {
+  margin: 0;
+}
+
+.artwork-carousel__empty {
+  padding: 2rem 0;
+}

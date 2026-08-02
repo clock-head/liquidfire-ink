@@ -1,0 +1,116 @@
+.btn-base {
+  padding: 0.65rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    opacity 160ms ease;
+}
+
+.btn-base:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.btn-base:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 0.35rem;
+}
+
+.btn-primary {
+  background-color: var(--surface-interactive-primary);
+  border-color: var(--primary-light);
+  color: var(--text-primary);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--secondary-hover);
+  color: var(--text-light);
+}
+
+.btn-secondary {
+  background-color: var(--surface-interactive-secondary);
+  border-color: var(--surface);
+  color: var(--text-light);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: var(--surface-elevated);
+  border-color: var(--secondary-light);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border-color: var(--secondary-light);
+  color: var(--secondary-light);
+}
+
+.btn-outline:hover:not(:disabled) {
+  background-color: var(--primary-light-glass);
+  color: var(--text-light);
+}
+
+.btn-outlinelight {
+  background-color: transparent;
+  border-color: var(--secondary-light-glass);
+  color: var(--secondary-light-glass);
+}
+
+.btn-outlinelight:hover:not(:disabled) {
+  background-color: var(--primary-light-glass);
+  color: var(--text-light);
+}
+
+.btn-carousel {
+  background-color: var(--surface);
+  border-color: var(--secondary-light);
+  color: var(--text-light);
+}
+
+.btn-carousel:hover:not(:disabled) {
+  background-color: var(--surface-elevated);
+}
+
+.btn-signup {
+  background-color: var(--surface-interactive-tertiary);
+  border-color: var(--text-tertiary-light);
+  color: var(--text-primary);
+}
+
+.btn-signup:hover:not(:disabled) {
+  background-color: var(--surface-interactive-success);
+}
+
+.btn-auth-secondary {
+  background-color: transparent;
+  border-color: var(--surface-interactive-secondary);
+  color: var(--text-light);
+}
+
+.btn-auth-secondary:hover:not(:disabled) {
+  background-color: var(--surface-interactive-secondary);
+}
+
+.intent-danger {
+  background-color: var(--surface-interactive-warning);
+  border-color: var(--surface-interactive-warning);
+  color: var(--text-primary);
+}
+
+.intent-submit {
+  background-color: var(--surface-interactive-success);
+  border-color: var(--surface-interactive-success);
+  color: var(--text-primary);
+}
+
+.intent-cancel {
+  background-color: transparent;
+  border-color: var(--surface-inset);
+  color: var(--text-light);
+}

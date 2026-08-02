@@ -1,33 +1,45 @@
 import { useState } from 'react';
-import ArtworkCarousel from '../components/gallery/ArtworkCarousel';
-import { artworks } from '../data/artworks';
+import Layout from '../components/Modular/Layout';
+import Section from '../components/Modular/Section';
+import NavBar from '../components/Navigation/NavBar';
+import Button from '../components/UI/Button/Button';
+import { useEnteredState } from '../hooks/useEnteredState';
 
 export default function HomePage() {
-  const [hasEntered, setHasEntered] = useState(false);
+  const { isEntered, setIsEntered } = useEnteredState(false);
+
+  const context = {};
 
   return (
-    <main className="home-page">
-      {!hasEntered ? (
-        <section className="enter-screen">
-          <button
+    <Layout
+      context={context}
+      background="dark"
+      layout="grid"
+      justifyContent="center"
+      justifyItems="center"
+      minHeight="100vh"
+    >
+      {!isEntered ? (
+        <Section
+          layout="grid"
+          height="100vh"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <Button
             type="button"
-            className="enter-screen__button"
-            onClick={() => setHasEntered(true)}
+            width="4"
+            onClick={() => setIsEntered(true)}
+            variant="outline"
           >
             Enter
-          </button>
-        </section>
+          </Button>
+        </Section>
       ) : (
-        <section className="home-page__gallery">
-          <button
-            className="home-page__exit-button"
-            onClick={() => setHasEntered(false)}
-          >
-            x
-          </button>
-          <ArtworkCarousel artworks={artworks} title="Exhibition" />
-        </section>
+        <Section alignContent="center" justifyContent="center" height="100vh">
+          <NavBar handleExit={() => setIsEntered(false)} />
+        </Section>
       )}
-    </main>
+    </Layout>
   );
 }

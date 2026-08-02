@@ -1,4 +1,4 @@
-import type { artwork } from '../types/artwork';
+import type { art } from '../types/ArtifactTypes/art';
 
 import artwork1 from '../assets/images/First_AI.png';
 import artwork2 from '../assets/images/divine-hour.jpg';
@@ -9,11 +9,11 @@ import artwork5 from '../assets/images/golden-stampede.jpg';
 // import artwork7 from '../assets/images/artwork-7.jpg';
 // import artwork8 from '../assets/images/artwork-8.jpg';
 
-export const artworks: artwork[] = [
+export const artworks: art[] = [
   {
     id: '1',
     slug: 'artemis-1',
-    title: 'Artemis-01',
+    name: 'Artemis-01',
     year: '2024',
     medium: 'Digital',
     aspectRatio: '1:1',
@@ -21,12 +21,12 @@ export const artworks: artwork[] = [
     image: artwork1,
     alt: 'Artemis-01 Turing Test',
     description:
-      'Doctor Ishihara believes that the human pineal gland can be artificially recontructed to create a synthetic form of consciousness.',
+      'Doctor Ishihara believes that a synthetic form of consciousness is possible. Refer to the Codex of Constructed Sentience',
   },
   {
     id: '2',
     slug: 'divine-hour',
-    title: 'Divine Hour',
+    name: 'Divine Hour',
     year: '2024',
     medium: 'Digital',
     aspectRatio: '1:1',
@@ -38,7 +38,7 @@ export const artworks: artwork[] = [
   {
     id: '3',
     slug: 'birth',
-    title: 'Birth',
+    name: 'Birth',
     year: '2024',
     medium: 'Digital',
     aspectRatio: '1:1',
@@ -50,7 +50,7 @@ export const artworks: artwork[] = [
   {
     id: '4',
     slug: 'tiger',
-    title: 'TigerHex',
+    name: 'TigerHex',
     year: '2024',
     medium: 'Digital',
     aspectRatio: '1:1',
@@ -62,7 +62,7 @@ export const artworks: artwork[] = [
   {
     id: '5',
     slug: 'golden-stampede',
-    title: 'Golden Stampede',
+    name: 'Golden Stampede',
     year: '2024',
     medium: 'Digital',
     aspectRatio: '1:1',

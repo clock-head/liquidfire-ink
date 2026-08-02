@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter/InterVariable.woff2') format('woff2');
+
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../assets/fonts/BebasNeue/BebasNeue-Regular.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}

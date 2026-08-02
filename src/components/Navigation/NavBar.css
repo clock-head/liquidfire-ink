@@ -1,0 +1,19 @@
+.nav-bar {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.nav-bar__link {
+  color: var(--secondary-light);
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav-bar__link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 0.5rem;
+}
+
+.nav-bar__link:hover {
+  color: var(--text-light);
+}

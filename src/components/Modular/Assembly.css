@@ -1,0 +1,157 @@
+/* flex assembly */
+
+.assembly.flex {
+  display: flex;
+}
+
+.assembly.grid {
+  display: grid;
+}
+
+.assembly.flex-direction-row {
+  flex-direction: row;
+}
+
+.assembly.flex-direction-column {
+  flex-direction: column;
+}
+
+.assembly.gap-xs {
+  gap: 0.25rem;
+}
+
+.assembly.gap-sm {
+  gap: 0.5rem;
+}
+
+.assembly.gap-md {
+  gap: 1rem;
+}
+
+.assembly.gap-lg {
+  gap: 1.5rem;
+}
+
+.assembly.gap-xl {
+  gap: 2rem;
+}
+
+.assembly.justify-content-left {
+  justify-content: flex-start;
+}
+
+.assembly.justify-content-center {
+  justify-content: center;
+}
+
+.assembly.justify-content-right {
+  justify-content: flex-end;
+}
+
+.assembly.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.assembly.align-items-top,
+.assembly.align-items-flex-top {
+  align-items: flex-start;
+}
+
+.assembly.align-items-center {
+  align-items: center;
+}
+
+.assembly.align-items-bottom,
+.assembly.align-items-flex-bottom {
+  align-items: flex-end;
+}
+
+.assembly.align-items-stretch {
+  align-items: stretch;
+}
+
+.assembly.position-static {
+  position: static;
+}
+
+.assembly.position-absolute {
+  position: absolute;
+}
+
+.assembly.position-fixed {
+  position: fixed;
+}
+
+.assembly.position-sticky {
+  position: sticky;
+}
+
+.assembly.position-relative {
+  position: relative;
+}
+
+.assembly.grid-template-standard-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    'area1 area1 area1'
+    'area2 area3 area4';
+  gap: 1rem;
+}
+
+.assembly.grid-template-standard-2-3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-areas:
+    'area1 area1'
+    'area2 area3'
+    'area4 area5';
+  gap: 1rem;
+}
+
+.assembly.grid-template-vertical-3 {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-areas:
+    'area-1'
+    'area-2'
+    'area-3';
+  gap: 1rem;
+}
+
+.assembly.grid-template-vertical-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'area-1'
+    'area-2'
+    'area-3'
+    'area-4';
+}
+
+.assembly.grid-template-horizontal-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  grid-template-areas: 'area-1 area-2';
+  gap: 1rem;
+}
+
+.assembly.grid-template-horizontal-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-areas: 'area-1 area-2 area-3';
+  gap: 1rem;
+}
+
+.assembly.grid-template-tile-4 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    'area-1 area-3'
+    'area-4 area-4';
+  gap: 1rem;
+}

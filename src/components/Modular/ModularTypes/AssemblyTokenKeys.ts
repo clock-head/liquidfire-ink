@@ -1,0 +1,43 @@
+import type { AssemblyTokenClasses } from './AssemblySettings';
+
+const assemblyTokenKeyMap = {
+  className: undefined,
+  layout: undefined,
+  gap: undefined,
+  gridTemplate: undefined,
+  flexDirection: undefined,
+  background: undefined,
+  position: undefined,
+  zIndex: undefined,
+  colSpan: undefined,
+  rowSpan: undefined,
+  width: undefined,
+  widthMin: undefined,
+  widthMax: undefined,
+  height: undefined,
+  heightMin: undefined,
+  heightMax: undefined,
+  justifyContent: undefined,
+  justifyItems: undefined,
+  alignContent: undefined,
+  alignItems: undefined,
+  justifySelf: undefined,
+  alignSelf: undefined,
+  paddingLeft: undefined,
+  paddingRight: undefined,
+  paddingTop: undefined,
+  paddingBottom: undefined,
+  margin: undefined,
+  marginLeft: undefined,
+  marginRight: undefined,
+  marginTop: undefined,
+  marginBottom: undefined,
+  borderRadius: undefined,
+  borderColor: undefined,
+  borderDark: undefined,
+  borderLight: undefined,
+} satisfies Record<keyof AssemblyTokenClasses, undefined>;
+
+export const assemblyTokenKeys = new Set<keyof AssemblyTokenClasses>(
+  Object.keys(assemblyTokenKeyMap) as Array<keyof AssemblyTokenClasses>,
+);

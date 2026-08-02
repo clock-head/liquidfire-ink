@@ -1,0 +1,366 @@
+.microunit {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.microunit.centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.microunit.flex-vertical {
+  flex-direction: column;
+}
+
+.microunit.flex-horizontal {
+  flex-direction: row;
+}
+
+.microunit.button-group-flex {
+  flex-direction: row;
+}
+
+.microunit.spacing-xs {
+  gap: 4px;
+  padding: 4px;
+}
+
+.microunit.gap-sm {
+  gap: 8px;
+  padding: 8px;
+}
+
+.microunit.spacing-md {
+  gap: 16px;
+  padding: 16px;
+}
+
+.microunit.spacing-lg {
+  gap: 24px;
+  padding: 24px;
+}
+
+.microunit.spacing-xl {
+  gap: 32px;
+  padding: 32px;
+}
+
+.microunit.spacing-2xl {
+  gap: 48px;
+  padding: 48px;
+}
+
+.microunit.spacing-3xl {
+  gap: 64px;
+  padding: 64px;
+}
+
+/* padding and margin classes cascading override above */
+
+.microunit.padding-left-sm {
+  padding-left: 0.5rem;
+}
+
+.microunit.padding-right-sm {
+  padding-right: 0.5rem;
+}
+
+.microunit.padding-top-sm {
+  padding-top: 0.5rem;
+}
+
+.microunit.padding-bottom-sm {
+  padding-bottom: 0.5rem;
+}
+
+.microunit.padding-left-md {
+  padding-left: 1rem;
+}
+
+.microunit.padding-right-md {
+  padding-right: 1rem;
+}
+
+.microunit.padding-top-md {
+  padding-top: 1rem;
+}
+
+.microunit.padding-bottom-md {
+  padding-bottom: 1rem;
+}
+
+.microunit.padding-left-lg {
+  padding-left: 2rem;
+}
+
+.microunit.padding-right-lg {
+  padding-right: 2rem;
+}
+
+.microunit.padding-top-lg {
+  padding-top: 2rem;
+}
+
+.microunit.padding-bottom-lg {
+  padding-bottom: 2rem;
+}
+
+.microunit.padding-left-xl {
+  padding-left: 3rem;
+}
+
+.microunit.padding-right-xl {
+  padding-right: 3rem;
+}
+
+.microunit.padding-top-xl {
+  padding-top: 3rem;
+}
+
+.microunit.padding-bottom-xl {
+  padding-bottom: 3rem;
+}
+
+.microunit.margin-left-sm {
+  margin-left: 8px;
+}
+
+.microunit.margin-right-sm {
+  margin-right: 8px;
+}
+
+.microunit.margin-top-sm {
+  margin-top: 0.5rem;
+}
+
+.microunit.margin-bottom-sm {
+  margin-bottom: 0.5rem;
+}
+
+.microunit.margin-left-md {
+  margin-left: 1rem;
+}
+
+.microunit.margin-right-md {
+  margin-right: 1rem;
+}
+
+.microunit.margin-top-md {
+  margin-top: 1rem;
+}
+
+.microunit.margin-bottom-md {
+  margin-bottom: 1rem;
+}
+
+.microunit.margin-left-lg {
+  margin-left: 2rem;
+}
+
+.microunit.margin-right-lg {
+  margin-right: 2rem;
+}
+
+.microunit.margin-top-lg {
+  margin-top: 2rem;
+}
+
+.microunit.margin-bottom-lg {
+  margin-bottom: 2rem;
+}
+
+.microunit.margin-left-xl {
+  margin-left: 3rem;
+}
+
+.microunit.margin-right-xl {
+  margin-right: 3rem;
+}
+
+.microunit.margin-top-xl {
+  margin-top: 3rem;
+}
+
+.microunit.margin-bottom-xl {
+  margin-bottom: 3rem;
+}
+
+.microunit.margin-left-xxl {
+  margin-left: 4rem;
+}
+
+.microunit.margin-right-xxl {
+  margin-right: 4rem;
+}
+
+.microunit.margin-top-xxl {
+  margin-top: 4rem;
+}
+
+.microunit.margin-bottom-xxl {
+  margin-bottom: 4rem;
+}
+
+.microunit.justify-self-left {
+  justify-self: start;
+}
+
+.microunit.justify-self-center {
+  justify-self: center;
+}
+
+.microunit.justify-self-right {
+  justify-self: end;
+}
+
+.microunit.justify-self-stretch {
+  justify-self: stretch;
+}
+
+.microunit.align-self-top {
+  align-self: start;
+}
+
+.microunit.align-self-center {
+  align-self: center;
+}
+
+.microunit.align-self-bottom {
+  align-self: end;
+}
+
+.microunit.align-self-stretch {
+  align-self: stretch;
+}
+
+.microunit.align-self-flex-top {
+  align-self: flex-start;
+}
+
+.microunit.align-self-flex-bottom {
+  align-self: flex-end;
+}
+
+.microunit.text-center {
+  text-align: center;
+}
+
+/* font classes */
+
+.microunit.h1-typography-display {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.microunit.h1-typography-heading {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.microunit.h1-typography-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.microunit.h2-typography-subtitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.microunit.p-typography-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.microunit.p-typography-body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.microunit.p-typography-body-small {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.microunit.p-typography-caption {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.microunit.p-typography-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.microunit.p-typography-button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.microunit.label-typography-label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* Color */
+
+.microunit.h1-color-text-primary {
+  color: var(--text-primary);
+}
+
+.microunit.h1-color-text-light {
+  color: var(--text-light);
+}
+
+.microunit.h1-color-text-secondary {
+  color: var(--text-secondary);
+}
+
+.microunit.h2-color-text-primary {
+  color: var(--text-primary);
+}
+
+.microunit.h2-color-text-light {
+  color: var(--text-light);
+}
+
+.microunit.h2-color-text-secondary {
+  color: var(--text-secondary);
+}
+
+.microunit.p-color-light {
+  color: var(--surface-light);
+}
+
+.microunit.label-color-text-primary {
+  color: var(--text-light);
+}
+
+.microunit.label-color-text-secondary {
+  color: var(--text-secondary);
+}

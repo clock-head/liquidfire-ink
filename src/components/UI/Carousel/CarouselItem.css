@@ -1,0 +1,13 @@
+.unit.motion-scale-blur img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.unit.motion-scale-blur h2,
+.unit.motion-scale-blur p {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
