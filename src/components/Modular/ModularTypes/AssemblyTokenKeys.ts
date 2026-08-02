@@ -5,6 +5,7 @@ const assemblyTokenKeyMap = {
   layout: undefined,
   gap: undefined,
   gridTemplate: undefined,
+  gridArea: undefined,
   flexDirection: undefined,
   background: undefined,
   position: undefined,

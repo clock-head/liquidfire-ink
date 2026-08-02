@@ -1,6 +1,5 @@
 import { books } from './_data/content';
 import { useNavigate } from 'react-router-dom';
-import { useEnteredState } from '../../hooks/useEnteredState';
 import type { book } from './_data/content';
 import Assembly from '../Modular/Assembly';
 import Button from '../UI/Button/Button';
@@ -12,7 +11,6 @@ const BookList = () => {
 
   const handleClick = () => {
     navigate('/');
-    setEnteredState(true);
   };
 
   return books.map((book: book) => {

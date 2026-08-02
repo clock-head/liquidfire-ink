@@ -1,4 +1,3 @@
-import React from 'react';
 import './Section.css';
 import { useLayout } from './contexts/layout/LayoutContext';
 import type { SectionSettings } from './ModularTypes/SectionSettings';
