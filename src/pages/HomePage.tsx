@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Layout from '../components/Modular/Layout';
 import Section from '../components/Modular/Section';
 import NavBar from '../components/Navigation/NavBar';
